@@ -1,0 +1,62 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/login-bg.jpg') no-repeat center center/cover;
+              
+    overflow: hidden;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    z-index: 0;
+}
+
+.login-card{
+    width: 400px;
+    background: transparent;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    box-shadow: 0 4px 30px ;
+}
+
+.forgot {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; 
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.remember input[type="checkbox"] {
+    margin-right: 5px; 
+}
+
+.login-card .form-label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.login-card .form-control {
+    padding: 10px;
+}
+
+

@@ -1,0 +1,100 @@
+body{
+    background-color: #f7f9fb;
+    font-family: "poppins", sans-serif;
+}
+/*NAVBAR*/
+.navbar{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.navbar-brand img{
+    height: 40px;
+}
+
+/*HERO SECTION*/
+.hero{
+    background: url("../images/poster-home.jpg") center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 140px 20px;
+    position: relative;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero h1, .hero p, .search-card{
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/*SEARCH CARD*/
+.search-card{
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/*scrollable seections*/
+
+.scroll-container{
+    overflow-x: auto; /*x= horizontal scroll*/
+    display: flex; /*place card in row*/
+    gap: 1rem; /*gap between card*/
+    padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar{
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/*CARDS*/
+
+.hotel-card{
+    width: 300px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.hotel-card:hover{
+    transform: scale(1.03);
+}
+
+.hotel-card img{
+    height: 180px;
+    object-fit: cover;
+}
+
+footer{
+    background: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px;
+}
