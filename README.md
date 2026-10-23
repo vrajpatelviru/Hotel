@@ -26,30 +26,7 @@ The Hotel Management System helps hotel staff manage daily activities through a 
 - **Local Server:** XAMPP / WAMP
 - **Browser:** Google Chrome or any modern web browser
 
-## 📂 Project Structure
 
-```text
-Hotel/
-│
-├── index.php
-├── login.php
-├── dashboard.php
-├── rooms/
-├── customers/
-├── bookings/
-├── billing/
-├── config/
-│   └── database.php
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── database/
-│   └── hotel_management.sql
-└── README.md
-```
-
-*This is an example structure. Replace it with your actual project files and folders.*
 
 ## ⚙️ Installation and Setup
 
@@ -80,11 +57,33 @@ Open the XAMPP Control Panel and start:
 2. Create a database named `hm`.
 3. Import the project's SQL file if one is available.
 
+### 5. Configure the Database
 
+Create folder name core and inside that folder make file name database.php then copy this code. 
+
+Example:
+
+`<?php
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "hm";
+
+$conn = mysqli_connect(
+    $host,
+    $username,
+    $password,
+    $database
+);
+
+if (!$conn) {
+    die("Database connection failed.");
+}
+?>`
 
 Use the database credentials configured on your own server.
 
-### 5. Run the Project
+### 6. Run the Project
 
 Open the following URL in your browser:
 
