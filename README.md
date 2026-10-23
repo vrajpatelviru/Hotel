@@ -63,7 +63,8 @@ Create folder name core and inside that folder make file name database.php then 
 
 Example:
 
-`<?php
+```text
+<?php
 $host = "localhost";
 $username = "root";
 $password = "";
@@ -79,7 +80,8 @@ $conn = mysqli_connect(
 if (!$conn) {
     die("Database connection failed.");
 }
-?>`
+?>
+```
 
 Use the database credentials configured on your own server.
 
